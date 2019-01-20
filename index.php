@@ -34,7 +34,7 @@
           <?php 
           		//This is the redirect link for the a tag
           		$url = "tracks.php?genre=";
-          		$final_url = $url . $genre->Name;
+          		$final_url = $url . urlencode($genre->Name);
           		$tag_stuff = "<a href=\"" . $final_url . "\"> " . $genre->Name . " </a> ";
           		echo $tag_stuff;
           ?>
